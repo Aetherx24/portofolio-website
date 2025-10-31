@@ -20,6 +20,10 @@ export default function Contact() {
                 <i className="fab fa-linkedin"></i>
                 LinkedIn
               </a>
+              <a href="https://wa.me/6282135502300" target="_blank" rel="noreferrer" className="contact-item">
+                <i className="fab fa-whatsapp"></i>
+                WhatsApp
+              </a>
             </div>
           </div>
           <form className="contact-form" id="contactForm">

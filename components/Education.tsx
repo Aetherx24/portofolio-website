@@ -8,9 +8,7 @@ export default function Education() {
           <div className="education-item card-right">
             <div className="education-row">
               <div className="education-notes">
-                25-week certified online course in Full-Stack Software Engineering. Notable
-                coursework: built a full-stack website as the final project. Awarded a
-                certificate of achievement with exemplary distinction.
+              Completed a 25-week intensive program covering front-end and back-end development, software architecture, and collaborative engineering practices. Recognized for outstanding performance and technical excellence.
               </div>
               <div className="education-card">
               <div className="education-date">2025 - 2025</div>
@@ -31,13 +29,13 @@ export default function Education() {
               <p className="education-description">Long Island, New York</p>
               </div>
               <div className="education-notes">
-                Concentration, projects, or key outcomes can be highlighted here.
+              Focused on the intersection of business strategy and technology, developing expertise in data management, digital transformation, and systems analysis to drive organizational performance.
               </div>
             </div>
           </div>
           <div className="education-item card-right">
             <div className="education-row">
-              <div className="education-notes">Optional description of coursework or honors.</div>
+              <div className="education-notes">Built a strong analytical foundation through courses in econometrics, microeconomics, and macroeconomics. Developed a deep understanding of market dynamics, data interpretation, and economic decision-making processes.</div>
               <div className="education-card">
               <div className="education-date">2018 - 2020</div>
               <h3 className="education-title">Bachelor of Economics</h3>
@@ -56,7 +54,7 @@ export default function Education() {
               <img src="/grc-logo.png" alt="Green River College" width={200} />
               <p className="education-description">Auburn, Washington</p>
               </div>
-              <div className="education-notes">Optional description of focus areas or activities.</div>
+              <div className="education-notes">Completed a broad-based curriculum spanning science, business, mathematics, and physical education, cultivating critical thinking and a versatile academic background that supported advanced business and economic studies</div>
             </div>
           </div>
         </div>

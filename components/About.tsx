@@ -6,9 +6,9 @@ export default function About() {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Hello! I’m Iqbal, a passionate Full-Stack Developer with hands-on experience in building scalable and secure web applications using modern technologies like Next.js, NestJS, TypeScript, and Tailwind CSS. I enjoy creating projects that combine functionality and clean design, from educational platforms and digital banking systems to e-commerce solutions. I’m always eager to learn, collaborate, and explore new ways to bring ideas to life through code. Welcome to my portfolio — feel free to explore my work and see what I’ve built!
+              Hello! I’m Iqbal, a meticulous and adaptable Full Stack Software Engineer passionate about building efficient, user-friendly web applications using HTML, CSS, JavaScript/TypeScript, Next.js, Nest.js, and PostgreSQL. I have developed and deployed multiple projects—including a responsive personal site, an e-commerce platform integrating public APIs, and a Learning Management System with user authentication and student progress tracking—demonstrating end-to-end experience from UI to backend and database design. I write clean, maintainable code and collaborate effectively in multicultural teams through active roles in Indonesian student organizations. I’m eager to contribute to building reliable, scalable features, measure real user outcomes, and continue learning through hands-on product work.
             </p>
-            <h3>My Skills</h3>
+            <h3>Technical Skills</h3>
             <div className="skills-grid">
               <div className="skill-item">
                 <i className="fab fa-html5" />
@@ -46,6 +46,17 @@ export default function About() {
                 <i className="fas fa-cubes" />
                 <span>Prisma ORM</span>
               </div>
+            </div>
+            <h3 style={{ marginTop: "2rem" }}>Soft Skills</h3>
+            <div className="tag-list">
+              <span className="tag">Problem Solving</span>
+              <span className="tag">Team Collaboration</span>
+              <span className="tag">Adaptability</span>
+              <span className="tag">Resource Planning</span>
+              <span className="tag">Release Coordination</span>
+            </div>
+            <div className="languages">
+              <strong>Language:</strong> Indonesian (Native), English (Full Professional Proficiency)
             </div>
           </div>
         </div>

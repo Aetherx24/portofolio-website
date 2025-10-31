@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   title: "Portfolio | Muhammad Iqbal Maulana",
   description: "Responsive personal portfolio: skills, education, projects, contact.",
   metadataBase: new URL("https://your-domain.com"),
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
   openGraph: {
     title: "Portfolio | Muhammad Iqbal Maulana",
     description: "Responsive personal portfolio: skills, education, projects, contact.",
