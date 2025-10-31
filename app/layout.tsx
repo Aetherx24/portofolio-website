@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Iqbal Portfolio",
     images: [
       {
-        url: "/assets/profile-picture.jpeg",
+        url: "/profile-picture.jpeg",
         width: 1200,
         height: 630,
         alt: "Muhammad Iqbal Maulana",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Portfolio | Muhammad Iqbal Maulana",
     description: "Responsive personal portfolio: skills, education, projects, contact.",
-    images: ["/assets/profile-picture.jpeg"],
+    images: ["/profile-picture.jpeg"],
   },
 };
 
