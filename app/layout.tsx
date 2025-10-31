@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./legacy.css";
@@ -13,15 +13,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
   title: "Portfolio | Muhammad Iqbal Maulana",
   description: "Responsive personal portfolio: skills, education, projects, contact.",
   metadataBase: new URL("https://your-domain.com"),
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
   openGraph: {
     title: "Portfolio | Muhammad Iqbal Maulana",
     description: "Responsive personal portfolio: skills, education, projects, contact.",
