@@ -15,7 +15,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.6;
   color: #333;
-  background: url('assets/background.png');
+  background: url('/assets/background.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
