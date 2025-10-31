@@ -5,7 +5,7 @@ export default function Projects() {
         <h2 className="section-title">My Projects</h2>
         <div className="project-grid">
           <div className="project-card">
-            <img src="/assets/bmi-calculator-en-scaled-1-1024x543.jpg" alt="BMI Calculator" width={300} />
+            <img src="/bmi-calculator-en-scaled-1-1024x543.jpg" alt="BMI Calculator" width={300} />
             <div className="project-info">
               <h3>BMI Calculator</h3>
               <p>Created a simple BMI calculator website using HTML, CSS and JavaScript</p>
@@ -25,7 +25,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="project-card">
-            <img src="/assets/Luminark Landing Page.png" alt="Luminark" width={300} />
+            <img src="/Luminark Landing Page.png" alt="Luminark" width={300} />
             <div className="project-info">
               <h3>Luminark</h3>
               <p>Created a Learning Management System called Luminark using Next.js and NestJS. It is a platform for creating and managing courses & lessons.</p>
@@ -45,7 +45,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="project-card">
-            <img src="/assets/RevoShop Landing Page.png" alt="RevoShop" width={300} />
+            <img src="/RevoShop Landing Page.png" alt="RevoShop" width={300} />
             <div className="project-info">
               <h3>RevoShop</h3>
               <p>Created an e-commerce website called RevoShop using Next.js and utilizes a public API to fetch products data.</p>

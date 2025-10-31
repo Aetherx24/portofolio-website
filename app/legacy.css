@@ -15,7 +15,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.6;
   color: #333;
-  background: url('/assets/background.png');
+  background: url('/background.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -279,17 +279,11 @@ h2 {
 .education-item {
   position: relative;
   margin-bottom: 3rem;
-  width: calc(50% - 30px);
+  width: 100%;
 }
 
-.education-item:nth-child(odd) {
-  margin-left: auto;
-  padding-left: 30px;
-}
-
-.education-item:nth-child(even) {
-  padding-right: 30px;
-}
+/* spacing so content doesn't touch the center line */
+.education-item { padding: 0 30px; }
 
 .education-item::before {
   content: '';
@@ -301,13 +295,20 @@ h2 {
   top: 0;
 }
 
-.education-item:nth-child(odd)::before {
-  left: -8px;
+.education-item::before { left: calc(50% - 8px); }
+
+/* Two-column row inside full-width item */
+.education-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
 }
 
-.education-item:nth-child(even)::before {
-  right: -8px;
-}
+.education-item.card-right .education-card { grid-column: 2; }
+.education-item.card-right .education-notes { grid-column: 1; }
+.education-item.card-left .education-card { grid-column: 1; }
+.education-item.card-left .education-notes { grid-column: 2; }
 
 .education-card {
   background-color: white;
@@ -360,6 +361,34 @@ h2 {
   color: #666;
   font-size: 0.95rem;
   text-align: center;
+}
+
+/* Side descriptions next to education cards */
+/* remove old modifier implementations (kept for backward compatibility) */
+
+/* Card on right, notes on left */
+.education-item.with-notes .education-card {
+  grid-column: 2;
+}
+.education-item.with-notes .education-notes {
+  grid-column: 1;
+}
+
+/* Card on left, notes on right */
+.education-item.with-notes-left .education-card {
+  grid-column: 1;
+}
+.education-item.with-notes-left .education-notes {
+  grid-column: 2;
+}
+
+.education-notes {
+  color: #4a4a4a;
+  line-height: 1.6;
+  display: flex;             /* center note text vertically to align across the card */
+  align-items: center;
+  height: 100%;
+  padding: 1rem 0;
 }
 
 /* Projects Section */
