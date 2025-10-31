@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website (Next.js + Tailwind + Legacy CSS)
+
+A single-page portfolio site for Muhammad Iqbal Maulana, rebuilt in Next.js while preserving the look of the original HTML/CSS site.
+
+## Tech Stack
+- Next.js 16 (App Router, TypeScript)
+- React 19
+- Tailwind CSS v4 (utility baseline)
+- Legacy CSS imported for exact styling (`app/legacy.css`)
+
+## Features
+- Single-page layout with sections: Home, About, Education, Projects, Contact
+- Sticky navbar with anchor links and smooth scrolling
+- Responsive timeline for Education with alternating descriptions
+- SEO metadata (Open Graph + Twitter)
 
 ## Getting Started
-
-First, run the development server:
-
+1) Install dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2) Run the dev server
+```bash
+npm run dev
+# open http://localhost:3000
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3) Build for production
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
+```
+app/
+  layout.tsx        # HTML shell, fonts, Font Awesome, global styles
+  page.tsx          # Single-page composition (sections + footer)
+  globals.css       # Tailwind v4 base + small globals
+  legacy.css        # Original stylesheet (ported from style.css)
+components/
+  Navbar.tsx
+  Hero.tsx
+  About.tsx
+  Education.tsx
+  Projects.tsx
+  Contact.tsx
+  Footer.tsx
+public/
+  <images, logos, thumbnails>
+```
 
-## Learn More
+## Content Editing
+- Hero title: `components/Hero.tsx`
+- About copy and skills: `components/About.tsx`
+- Education entries and descriptions: `components/Education.tsx`
+- Projects list and links: `components/Projects.tsx`
+- Contact info and form: `components/Contact.tsx`
 
-To learn more about Next.js, take a look at the following resources:
+Images live in `public/`. Reference them with absolute paths like `/profile-picture.jpeg`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## SEO
+Edit `app/layout.tsx` metadata: title, description, `openGraph.images`, and `metadataBase` (replace with your domain when deployed).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment (Vercel)
+- Push to GitHub and import the repo in Vercel
+- Framework preset: Next.js
+- Build command: `npm run build`
+- Output: `.vercel/output` (handled automatically by Next)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes
+- Tailwind utilities are available but legacy CSS governs the design for parity with the original site.
+- Font Awesome 5.15.4 is loaded via CDN in `layout.tsx` for icons used in Skills/Contact.
