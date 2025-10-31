@@ -79,9 +79,8 @@ body {
 
 /* Section Styles */
 section {
-  padding: 5rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 5rem 0;
+  width: 100%;
 }
 
 /* Heading Styles */
