@@ -8,6 +8,7 @@ export default function Projects() {
             <img src="/bmi-calculator-en-scaled-1-1024x543.jpg" alt="BMI Calculator" width={300} />
             <div className="project-info">
               <h3>BMI Calculator</h3>
+              <div className="project-dates">October 2024 - November 2024</div>
               <div className="project-details">
                 <div className="project-section">
                   <h4>Background</h4>
@@ -26,6 +27,8 @@ export default function Projects() {
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
+                <span>Git</span>
+                <span>GitHub</span>
               </div>
               <div className="project-links">
                 <a href="https://github.com/revou-fundamental-course/28-oct-24-Aetherx24" target="_blank" rel="noreferrer">
@@ -41,6 +44,7 @@ export default function Projects() {
             <img src="/Luminark Landing Page.png" alt="Luminark" width={300} />
             <div className="project-info">
               <h3>Luminark</h3>
+              <div className="project-dates">June 2025 - August 2025</div>
               <div className="project-details">
                 <div className="project-section">
                   <h4>Background</h4>
@@ -59,6 +63,13 @@ export default function Projects() {
                 <span>Next.js</span>
                 <span>NestJS</span>
                 <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+                <span>PostgreSQL</span>
+                <span>Prisma ORM</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Railway</span>
+
               </div>
               <div className="project-links">
                 <a href="https://github.com/revou-fsse-feb25/final-project-fe-aetherx24" target="_blank" rel="noreferrer">
@@ -74,6 +85,7 @@ export default function Projects() {
             <img src="/RevoShop Landing Page.png" alt="RevoShop" width={300} />
             <div className="project-info">
               <h3>RevoShop</h3>
+              <div className="project-dates">May 2025 - June 2025</div>
               <div className="project-details">
                 <div className="project-section">
                   <h4>Background</h4>
@@ -92,12 +104,55 @@ export default function Projects() {
                 <span>Next.js</span>
                 <span>TypeScript</span>
                 <span>Tailwind CSS</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Vercel</span>
               </div>
               <div className="project-links">
                 <a href="https://github.com/revou-fsse-feb25/milestone-3-aetherx24" target="_blank" rel="noreferrer">
                   <i className="fab fa-github"></i>Code
                 </a>
                 <a href="https://milestone-3-aetherx24.vercel.app/" target="_blank" rel="noreferrer">
+                  <i className="fas fa-external-link-alt"></i>Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="project-card">
+            <img src="/WeRent.PNG" alt="Product Requirement Document Implementation - WeRent" width={300} />
+            <div className="project-info">
+              <h3>Product Requirement Document Implementation - WeRent</h3>
+              <div className="project-dates">November 2025 - December 2025</div>
+              <div className="project-details">
+                <div className="project-section">
+                  <h4>Background</h4>
+                  <p>Product Requirement Document Implementation Project is a hands-on project focused on developing user-centered web applications based on PRD guidelines. Supervised by RevoU, the project hones collaboration, problem-solving, and analytical skills to deliver scalable, high-quality solutions aligned with business and user needs. I was the project manager in a 5-person team, and led the end-to-end implementation of a PRD-defined user story for an e-commerce platform.</p>
+                </div>
+                <div className="project-section">
+                  <h4>Method/Strategy/Solution</h4>
+                  <p><strong>Responsibilities:</strong> As the Project Manager, I was responsible for coordinating a team of four developers, defining task ownership, aligning the team with the Product Requirement Document (PRD), and ensuring that the feature was implemented according to user story specifications. <strong>Scope:</strong> Led the implementation of a review-truncation feature for an e-commerce platform, designed to shorten product reviews exceeding 200 characters. Oversaw workflow planning, milestone tracking, team communication, and feature verification to ensure consistent behavior and compliance with acceptance criteria. Collaborated with the team to review edge cases, validate UX requirements, and maintain development quality throughout the process.</p>
+                </div>
+                <div className="project-section">
+                  <h4>Result/Output</h4>
+                  <p>Successfully delivered a fully implemented review-truncation feature that shortens long reviews to 200 characters, resulting in a cleaner interface and improved readability on product pages. The feature enhances user experience by reducing visual clutter and making product reviews easier to scan, ultimately improving the overall usability of the e-commerce platform.</p>
+                </div>
+              </div>
+              <div className="project-tags">
+                <span>Next.js</span>
+                <span>NestJS</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+                <span>PostgreSQL</span>
+                <span>Prisma ORM</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Trello</span>
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/PRD-Team-B/fe-prd" target="_blank" rel="front-end repository">
+                  <i className="fab fa-github"></i>Code
+                </a>
+                <a href="https://fe-prd-production.up.railway.app/" target="_blank" rel="live demo">
                   <i className="fas fa-external-link-alt"></i>Live Demo
                 </a>
               </div>
