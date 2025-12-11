@@ -543,6 +543,14 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.project-dates {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .project-details {
   margin-bottom: 1.5rem;
 }
